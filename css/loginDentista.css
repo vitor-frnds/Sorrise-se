@@ -1,26 +1,39 @@
 body {
-    background-image:  url(../img/telaInicial.png);
+    background-image: url(../img/loginDentista.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
-div {
-    max-width: 100%;
-    height: auto;
+header {
+    transform: translate(-100%, -100%);
+    position: absolute;
+    font-size: 50px;
+    top: 25%;
+    left: 15%;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
     list-style-type: none;
 }
 
-a {
-    color: white;
+main {
     text-decoration: none;
+    list-style: none;
+}
+
+input {
+    background-color: white;
+    border: none;   
+    border-radius: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    size: 100px;
 }
 
 button {
@@ -35,38 +48,16 @@ button {
     font-size: 25px;
 }
 
-header {
-    transform: translate(-100%, -100%);
-    position: absolute;
-    font-size: 50px;
-    top: 50%;
-    left: 31%;
-}
-
-.main {
-    transform: translate(-100%, -100%);
-    position: absolute;
-    top: 60%;
-    left: 16%;
-
-}
-
 .option1 {
     transform: translate(-100%, -100%);
     position: absolute;
-    top: 70%;
-    left: 20%;
+    top: 50%;
+    left: 30%;
 }
 
 .option2 {
     transform: translate(-100%, -100%);
     position: absolute;
     top: 70%;
-    left: 35%;
+    left: 30%;
 }
-
-
-/*
-cor do fundo: #99d9d9
-cor do botão: #51b6b6
-*/
