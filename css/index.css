@@ -4,9 +4,14 @@ cor do fundo: #99d9d9
 cor do botão: #51b6b6
 */
 
-body {
-    margin: 0; /*remover margem criado por padrão. Ao usar o body é criado uma margem de 8px*/
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-login {
