@@ -9,42 +9,179 @@
 </head>
 <body>
     
-    <div class="main-login">
-        <h1>Dados Cadastrais</h1>
-        <div class="left-login">
-            <div class="card-login">
+    <!-- <div class="main-login">
+
+        <div class="card-login">
+
+            <h1>Dados Cadastrais</h1>
+
+            <div class="left-login">
+
                 <div class="text-field">
-                    <label for="nomeCompleto">Nome Completo:</label>
-                    <input type="text" name="nomeCompleto" placeholder="Nome Completo">
+
+                    <label id="nomeLabel" for="nomeCompleto">Nome Completo:</label>
+                    <input id="nome" type="text" name="nomeCompleto" placeholder="Nome Completo">
+
                 </div>
+
                 <div class="text-field">
-                    <label for="cpf">CPF:</label>
-                    <input type="text" name="cpf" placeholder="CPF">
+
+                    <label id="cpfLabel" for="cpf">CPF:</label>
+                    <input id="cpf" type="text" name="cpf" placeholder="CPF">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="croLabel" for="cro">CRO:</label>
+                    <input id="cro" type="text" name="cro" placeholder="CRO">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="telefoneLabel" for="telefone">Telefone</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="Telefone">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="enderecoLabel" for="Endereco">Endereço:</label>
+                    <input id="endereco" type="text" name="endereco" placeholder="Endereço">
+
+                </div>
+
+
+                <div class="text-field">
+
+                    <label id="emailLabel" for="Email">Email:</label>
+                    <input id="email" type="text" name="email" placeholder="Email">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="senhaLabel" for="Senha">Senha:</label>
+                    <input id="senha" type="password" name="senha" placeholder="Senha">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="confirmSenhaLabel" for="confirmSenha">Confirmar senha:</label>
+                    <input id="confirmSenha" type="password" name="confirmSenha" placeholder="Confirmar senha">
+
                 </div>
 
             </div>
 
-        </div>
-        <div class="right-login">
-            <div class="card-login">
-                <div class="text-field">
-                    <label for="cro">CRO:</label>
-                    <input type="text" name="cro" placeholder="CRO">
-                </div>
-                <div class="text-field">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" placeholder="Telefone">
-                </div>
+
+            <div class="right-login">
+
+
 
             </div>
 
         </div>
-        <div class="botton-login">
-            <label for="Endereco">Endereço:</label>
-            <input type="text" name="endereco" placeholder="Endereço">
 
-            <a href="cadastroDentista2.html"><button class="btn-login">Continuar</button></a>
-        </div>
+
+
     </div>
+
+
+    <script src="../js/cadastroDentista.js"></script> -->
+
+    <div class="main-login">
+
+        <div class="left-login">
+
+            <div class="card-login">
+
+                <h1>Cadastrar</h1>
+
+                <div class="text-field">
+
+                    <label id="nomeLabel" for="nomeCompleto">Nome Completo:</label>
+                    <input id="nome" type="text" name="nomeCompleto" placeholder="Nome Completo">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="cpfLabel" for="cpf">CPF:</label>
+                    <input id="cpf" type="text" name="cpf" placeholder="CPF">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="croLabel" for="cro">CRO:</label>
+                    <input id="cro" type="text" name="cro" placeholder="CRO">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="telefoneLabel" for="telefone">Telefone</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="Telefone">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="enderecoLabel" for="Endereco">Endereço:</label>
+                    <input id="endereco" type="text" name="endereco" placeholder="Endereço">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="right-login">
+
+            <div class="card-login">
+
+                <div class="text-field">
+
+                    <label id="emailLabel" for="Email">Email:</label>
+                    <input id="email" type="text" name="email" placeholder="Email">
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="senhaLabel" for="Senha">Senha:</label>
+                    <input id="senha" type="password" name="senha" placeholder="Senha">
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="text-field">
+
+                    <label id="confirmSenhaLabel" for="confirmSenha">Confirmar senha:</label>
+                    <input id="confirmSenha" type="password" name="confirmSenha" placeholder="Confirmar senha">
+                    <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+                </div>
+
+                <div class="btn">
+
+                    <a href="cadastroDentista1.html"><button class="btn-cadastro">Cadastre-se</button></a>
+
+                </div>
+
+            </div>
+
+        </div>  
+
+    </div>
+
+
+    <script src="../js/loginDentista.js"></script>
+
+
 </body>
 </html>
