@@ -84,6 +84,7 @@ body {
     cursor: pointer;           /*seta o cursor como cursor de ação*/
     box-shadow: 0px 10px 40px -12px #72afaf;
 }
+
 button:focus{
     border-color: white;
     box-shadow: 0 0 0 3px #72afaf;

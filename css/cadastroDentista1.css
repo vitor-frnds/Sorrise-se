@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-login {
+    width: 100vw;                        /*"Largura"; vw representa a porcentagem da largura da 'viewport', da 'tela'*/
+    height: 100vh;                       /*"Altura"; vh representa a porcentagem da altura da 'viewport', da 'tela'*/
+    background-color: #99d9d9;
+    display: flex;                       /*Organizar os conteúdos dentro da div; 'Flex' faz as coisas ficarem lado a lado*/
+    justify-content: space-between;      /*Centraliza as coisas no eixo X*/
+    align-items: center;                 /*Centraliza as coisas no eixo Y*/
+    flex-direction: column;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       /*Tudo fique um em baixo do outro*/
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botton-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       /*Tudo fique um em baixo do outro*/
+}
+
+/*
+cor do fundo: #99d9d9
+cor do botão: #51b6b6
+*/
