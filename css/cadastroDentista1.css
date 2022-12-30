@@ -2,72 +2,89 @@
 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.main-login {
-    width: 100vw;                 /*"Largura"; vw representa a porcentagem da largura da 'viewport', da 'tela'*/
-    height: 100vh;                /*"Altura"; vh representa a porcentagem da altura da 'viewport', da 'tela'*/
-    background-color: #99d9d9;  /**/
-    display: flex;                /*Organizar os conteúdos dentro da div; 'Flex' faz as coisas ficarem lado a lado*/
-    justify-content: center;      /*Centraliza as coisas no eixo X*/
-    align-items: center;          /*Centraliza as coisas no eixo Y*/
-}
-
-.left-login {
-    width: 50vw;
+.container {
+    width: 100vw;
     height: 100vh;
+    background-color: #99d9d9;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;       /*Tudo fique um em baixo do outro*/
+    flex-direction: row;
 }
 
-.card-login {
-    width: 80%;                             /*Será 60% do tamanho da div. O tamanho da div representa 50% da viewport, logo será de 60% sobre os 50vw da div*/
+h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-right: 100px;
+}
+
+.card {
+    width: 90%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;                 /*Tudo fique um em baixo do outro*/
-    padding: 30px 35px;                     /*Margens pra dentro do componente. 1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
-    background: #99d9d9;                  /*Cor do plano de fundo*/
-    border-radius: 20px;                    /*Arredonda a borda*/
-    box-shadow: 0px 10px 40px #00000056;  /*Sombra para o card. 1º valor se refere ao eixo X, 2º valor se refere ao eixo Y, 3º valor se refere ao 'blur', 4º valor se refere à cor*/
+    flex-direction: column;
+    background: #99d9d9;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.card-login > h1 {
-    color: white;
-    font-size: 70px;
-    margin: 0;             /*Tirar a margem criada do H1*/
+.full-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 35px;
+    background: #99d9d9;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 0px #72afaf;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-
+.left-card {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .text-field {
     width: 100%;
     display: flex;
-    flex-direction: column; /*justify-content se refere ao eixo X, allign-items se refere ao eixo Y. Ao utilizar o flex-direction os eixos se invertem*/
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    font-size: 10px;
-
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
 
 .text-field > input {
     width: 100%;
     border: none;
     border-radius: 10px;
-    padding: 15px;         /*Ao utilizar o padding com um único valor, ele vale tanto pro X quanto pro Y*/
+    padding: 15px;
     background: white;
     color: black;
-    font-size: 12;         /*Tamanho da fonte; 'pt' é a unidade de medida usada nos editores de texto*/
-    outline: none;         /*Tirar "caixa de seleção"*/
-    box-sizing: border-box;/*Div filho não vai poder ultrapassar o tamanho da div pai*/
+    font-size: 12;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .text-field > input::placeholder{
@@ -75,86 +92,75 @@ body {
 }
 
 .text-field > label{
+    float: left;
+    display: block;
+    width: 100%;
     color: #f0ffffde;
-    margin-bottom: 10px; /*Margem para baixo*/
+    margin-bottom: 10px;
 }
 
-.fa-eye {
-    color: #51b6b6;
-    justify-self: end;
+.center-card {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa-user-circle {
+    margin-top: 5%;
+    color: #ffffff;
+    font-size: 50px;
     cursor: pointer;
-    position: absolute;
-    padding-top: 20px;
-    right: 6%;
+}
+
+p {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
 }
 
 .btn {
     display: grid;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
-button:focus{
-    border-color: white;
-    box-shadow: 0 0 0 3px #72afaf;
-    caret-color: white;
-}
-
-.btn > h3 {
-    color: #545959ac;
-    font-size: 20px;
-    margin: 0;             /*Tirar a margem criada do H3*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-}
-.btn-login {
-    width: 100%;
-    padding: 25px 45px;        /*1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
-    margin: 0px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase; /*Deixa todas as letras em maiúsculo*/
-    font-size: 20px;
-    font-weight: 700;          /*Torna a fonte mais grossa*/
-    letter-spacing: 2px;
-    color: white;
-    background: #51b6b6;
-    cursor: pointer;           /*seta o cursor como cursor de ação*/
-    box-shadow: 0px 10px 40px -12px #72afaf;
-}
-
-.btn-cadastro {
-    width: 100%;
-    padding: 25px 45px;        /*1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
-    margin: 0px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase; /*Deixa todas as letras em maiúsculo*/
-    font-size: 20px;
-    font-weight: 700;          /*Torna a fonte mais grossa*/
-    letter-spacing: 2px;
-    color: white;
-    background: #51b6b6;
-    cursor: pointer;           /*seta o cursor como cursor de ação*/
-    box-shadow: 0px 10px 40px -12px #72afaf;
-}
-
-.right-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;       /*Tudo fique um em baixo do outro*/
-}
-
-.right-login-image {
+.btn-cadastrar {
     width: 80%;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: 0px 10x 50px #72afaf;
+    padding: 25px 45px;
+    margin-top: 250px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    background: #51b6b6;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #72afaf;
+}
+
+.right-card {
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa-eye {
+    color: #51b6b6;
+    justify-self: baseline;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 35px;
+    right: 8.5%;
 }
