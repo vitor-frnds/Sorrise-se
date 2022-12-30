@@ -15,12 +15,12 @@ cor do botão: #51b6b6
 }
 
 .main-login {
-    width: 100vw;                        /*"Largura"; vw representa a porcentagem da largura da 'viewport', da 'tela'*/
-    height: 100vh;                       /*"Altura"; vh representa a porcentagem da altura da 'viewport', da 'tela'*/
+    width: 100vw;
+    height: 100vh;
     background-color: #99d9d9;
-    display: flex;                       /*Organizar os conteúdos dentro da div; 'Flex' faz as coisas ficarem lado a lado*/
-    justify-content: space-between;      /*Centraliza as coisas no eixo X*/
-    align-items: center;                 /*Centraliza as coisas no eixo Y*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
 }
 
@@ -30,34 +30,34 @@ cor do botão: #51b6b6
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;       /*Tudo fique um em baixo do outro*/
+    flex-direction: column;
 }
 
 .card-login {
-    width: 90%;                             /*Será 60% do tamanho da div. O tamanho da div representa 50% da viewport, logo será de 60% sobre os 50vw da div*/
+    width: 90%;
     height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;                 /*Tudo fique um em baixo do outro*/
-    padding: 30px 35px;                     /*Margens pra dentro do componente. 1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
-    background: #99d9d9;                  /*Cor do plano de fundo*/
-    border-radius: 20px;                    /*Arredonda a borda*/
-    box-shadow: 0px 10px 50px #72afaf;    /*Sombra para o card. 1º valor se refere ao eixo X, 2º valor se refere ao eixo Y, 3º valor se refere ao 'blur', 4º valor se refere à cor*/
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #99d9d9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px #72afaf;
     text-align: center;
 }
 
 .card-login h1 {
     color: white;
     font-size: 70px;
-    margin: 0;             /*Tirar a margem criada do H1*/
+    margin: 0;
     padding-bottom: 20px;
 }
 
 .card-login h3 {
     color: white;
     font-size: 35px;
-    margin: 0;             /*Tirar a margem criada do H3*/
+    margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -67,7 +67,7 @@ cor do botão: #51b6b6
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;            /*justify-content se refere ao eixo X, align-items se refere ao eixo Y. Ao utilizar o flex-direction os eixos se invertem*/
+    flex-direction: row;
     padding-top: 20px;
     margin: 10px 0px;
 
@@ -75,24 +75,24 @@ cor do botão: #51b6b6
 
 .btn-login {
     width: 100%;
-    padding: 25px 45px;        /*1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
+    padding: 25px 45px;
     margin: 0px;
     border: none;
     border-radius: 8px;
     outline: none;
-    text-transform: uppercase; /*Deixa todas as letras em maiúsculo*/
+    text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;          /*Torna a fonte mais grossa*/
+    font-weight: 700;
     letter-spacing: 2px;
     color: white;
     background: #51b6b6;
-    cursor: pointer;           /*seta o cursor como cursor de ação*/
+    cursor: pointer;
     box-shadow: 0px 10px 40px -12px #72afaf;
 }
 
 button:focus{
     border-color: white;
-    box-shadow: 0 0 0 3px #72afaf;
+    box-shadow: 0 0 0 3px #206363;
     caret-color: white;
 }
 
@@ -108,5 +108,5 @@ button:focus{
     width: 80%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: 0px 10x 50px #72afaf;
+    box-shadow: 0px 10px 50px #72afaf;
 }

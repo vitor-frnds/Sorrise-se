@@ -12,29 +12,49 @@
     <div class="main-login">
 
         <div class="right-login">
+
             <img src="../img/loginPaciente.png" class="right-login-image" alt="Tela Inicial">
+
         </div> 
 
         <div class="left-login">
+
             <div class="card-login">
+
                 <h1>Entrar</h1>
+
                 <div class="text-field">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Email">
+
+                    <label id="userLabel" for="email">Email</label>
+                    <input type="text" id="email" placeholder="Email" required>
+
                 </div>
+
                 <div class="text-field">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+
+                    <label id="senhaLabel" for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
                 </div>
+
                 <div class="btn">
+
                     <a href="principalPaciente.html"><button class="btn-login">Login</button></a>
+
                     <h3>Ainda não atualizou seu cadastro?</h3>
                     <a href="cadastroPaciente.html"><button class="btn-cadastro">Atualizar cadastro</button></a>
+
                 </div>
 
             </div>
+
         </div>
+
     </div>
+
+
+    <script src="../js/loginPaciente.js"></script>
     
 </body>
 </html>

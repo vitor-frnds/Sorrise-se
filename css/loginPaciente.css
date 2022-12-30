@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+
 body {
-    margin: 0; /*remover margem criado por padrão. Ao usar o body é criado uma margem de 8px*/
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-login {
@@ -75,6 +83,15 @@ body {
     margin-bottom: 10px; /*Margem para baixo*/
 }
 
+.fa-eye {
+    color: #51b6b6;
+    justify-self: end;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 40px;
+    right: 6.5%;
+}
+
 .btn {
     display: grid;
     width: 100%;
@@ -83,7 +100,7 @@ body {
 
 button:focus{
     border-color: white;
-    box-shadow: 0 0 0 3px #72afaf;
+    box-shadow: 0 0 0 3px #206363;
     caret-color: white;
 }
 
@@ -142,5 +159,5 @@ button:focus{
     width: 80%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: 0px 10x 50px #72afaf;
+    box-shadow: 0px 10px 50px #72afaf;
 }

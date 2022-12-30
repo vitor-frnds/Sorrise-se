@@ -132,6 +132,7 @@ p {
 
 .btn-cadastrar {
     width: 80%;
+    min-width: 10%;
     padding: 25px 45px;
     margin-top: 250px;
     border: none;
@@ -145,6 +146,12 @@ p {
     background: #51b6b6;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #72afaf;
+}
+
+button:focus{
+    border-color: white;
+    box-shadow: 0 0 0 3px #206363;
+    caret-color: white;
 }
 
 .right-card {
