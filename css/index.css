@@ -34,8 +34,8 @@ cor do botão: #51b6b6
 }
 
 .card-login {
-    width: 80%;                             /*Será 60% do tamanho da div. O tamanho da div representa 50% da viewport, logo será de 60% sobre os 50vw da div*/
-    height: 80%;
+    width: 90%;                             /*Será 60% do tamanho da div. O tamanho da div representa 50% da viewport, logo será de 60% sobre os 50vw da div*/
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
