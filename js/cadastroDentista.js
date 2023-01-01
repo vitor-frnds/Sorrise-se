@@ -1,3 +1,4 @@
+//Variáveis para a visualização da senha
 let btn = document.querySelector('.fa-eye');
 let btnConfirm = document.querySelector('#verConfirmSenha');
 
@@ -44,6 +45,7 @@ let validConfirmSenha = false;
 //Variáveis das mensagens de erro e sucesso
 let msgError = document.querySelector('#msgError');
 let msgSuccess = document.querySelector('#msgSuccess');
+
 
 //Validação campo nome
 nome.addEventListener('keyup', () => {
