@@ -191,6 +191,51 @@ confirmSenha.addEventListener('keyup', () => {
 
 });
 
+//Funcionalidade para cadastrar o dentista
+function cadastrar(){
+
+    if(validNome && validCpf && validCro && validTelefone && validEndereco && validEmail && validSenha && validConfirmSenha){
+
+        let listaDentista = JSON.parse(localStorage.getItem('listaDentista') || '[]');
+
+        listaDentista.push(
+        {
+            nomeCad: nome.value,
+            cpfCad: cpf.value,
+            croCad: cro.value,
+            telefoneCad: telefone.value,
+            enderecoCad: endereco.value,
+            emailCad: email.value,
+            senhaCad: senha.value,
+            confirmSenhaCad: confirmSenha.value
+        });
+
+
+        localStorage.setItem('listaDentista', JSON.stringify(listaDentista));
+
+
+        msgSuccess.setAttribute('style', 'display: block');
+        msgSuccess.innerHTML = '<strong>Cadastrando dentista...</strong>'
+
+        msgError.setAttribute('style', 'display: none');
+        msgError.innerHTML =''
+
+
+        setTimeout (()=>{
+            window.location.href = '../html/loginDentista.html';
+        }, 3000)
+        
+    }
+    else {
+        msgError.setAttribute('style', 'display: block');
+        msgError.innerHTML ='<strong>Preencha todos os campos corretamente antes de cadastrar</strong>'
+
+        msgSuccess.setAttribute('style', 'display: none');
+        msgSuccess.innerHTML ='';
+    }
+
+};
+
 //Funcionalidade para visualizar a senha
 btn.addEventListener('click', ()=>{
 
