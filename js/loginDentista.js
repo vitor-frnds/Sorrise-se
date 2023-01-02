@@ -27,6 +27,11 @@ function entrar(){
 
     listaDentista =JSON.parse(localStorage.getItem('listaDentista'));
 
+    if (localStorage.getItem('listaDentista') == null)
+    {
+        msgError.setAttribute('style', 'display: block');
+        msgError.innerHTML = 'Usuário não cadastrado';
+    }
 
     listaDentista.forEach((item) => {
 

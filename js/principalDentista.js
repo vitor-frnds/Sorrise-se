@@ -1,19 +1,18 @@
 
-let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
-let logado = document.querySelector('#logado');
-
-
-logado.innerHTML = 'Olá ' + dentistaLogado.nome;
-
-
-if (localStorage.getItem('dentistaLogado') == null){
+if (localStorage.getItem('token') == null){
     alert('Você precisa estar logado para acessar essa página.');
     
 
     setTimeout (()=>{
         window.location.href = '../html/index.html';
-    }, 30)
+    }, 30);
 };
+
+let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
+let logado = document.querySelector('#logado');
+
+
+logado.innerHTML = 'Olá ' + dentistaLogado.nome;
 
 //Funcionalidade para sair da tela principalDentista
 function sair(){
