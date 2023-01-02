@@ -1,10 +1,11 @@
 
-if (localStorage.getItem('tokenDentista') == null){
+if (localStorage.getItem('tokenPaciente') == null){
+
     alert('Você precisa estar logado para acessar essa página.');
     
 
     setTimeout (()=>{
-        window.location.href = '../html/loginPaciente.html';
+        window.location.href = '../html/index.html';
     }, 3);
 };
 
@@ -17,8 +18,8 @@ logado.innerHTML = 'Olá ' + pacienteLogado.email;
 //Funcionalidade para sair da tela principalPaciente
 function sair(){
 
-    localStorage.removeItem('tokenDentista');
-    localStorage.removeItem('dentistaLogado');
-    window.location.href = "../html/loginDentista.html";
+    localStorage.removeItem('tokenPaciente');
+    localStorage.removeItem('pacienteLogado');
+    window.location.href = "../html/loginPaciente.html";
 
 };

@@ -23,16 +23,19 @@
 
                 <h1>Entrar</h1>
 
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+
                 <div class="text-field">
 
-                    <label id="userLabel" for="email">Email</label>
+                    <label id="labelEmail" for="email">Email</label>
                     <input type="text" id="email" placeholder="Email" required>
 
                 </div>
 
                 <div class="text-field">
 
-                    <label id="senhaLabel" for="senha">Senha</label>
+                    <label id="labelSenha" for="senha">Senha</label>
                     <input type="password" id="senha" placeholder="Senha" required>
                     <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
 
@@ -40,7 +43,7 @@
 
                 <div class="btn">
 
-                    <a href="principalPaciente.html"><button class="btn-login">Login</button></a>
+                    <button onclick="entrar()" class="btn-login">Login</button>
 
                     <h3>Ainda não atualizou seu cadastro?</h3>
                     <a href="cadastroPaciente.html"><button class="btn-cadastro">Atualizar cadastro</button></a>

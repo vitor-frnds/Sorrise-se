@@ -1,5 +1,6 @@
 
 if (localStorage.getItem('tokenDentista') == null){
+    
     alert('Você precisa estar logado para acessar essa página.');
     
 
