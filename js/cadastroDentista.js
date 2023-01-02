@@ -1,4 +1,4 @@
-//Variáveis para a visualização da senha
+//Funcionalidade para visualizar a senha
 let btn = document.querySelector('.fa-eye');
 let btnConfirm = document.querySelector('#verConfirmSenha');
 
@@ -207,7 +207,6 @@ function cadastrar(){
             enderecoCad: endereco.value,
             emailCad: email.value,
             senhaCad: senha.value,
-            confirmSenhaCad: confirmSenha.value
         });
 
 

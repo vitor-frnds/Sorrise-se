@@ -17,16 +17,18 @@
 
                 <h1>Entrar</h1>
 
+                <div id="msgError"></div>
+
                 <div class="text-field">
 
-                    <label id="userLabel" for="email">Email</label>
+                    <label id="labelEmail" for="email">Email</label>
                     <input type="text" id="email" placeholder="Email" required>
 
                 </div>
 
                 <div class="text-field">
                     
-                    <label id="senhaLabel" for="senha">Senha</label>
+                    <label id="labelSenha" for="senha">Senha</label>
                     <input type="password" id="senha" placeholder="Senha" required>
                     <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
 
@@ -34,7 +36,7 @@
 
                 <div class="btn">
 
-                    <a href="principalDentista.html"><button onclick="entrar()" class="btn-login">Login</button></a>
+                    <button onclick="entrar()" class="btn-login">Login</button>
                     <h3>Não tem uma conta?</h3>
                     <a href="cadastroDentista.html"><button class="btn-cadastro">Cadastre-se</button></a>
 

@@ -179,3 +179,23 @@ button:focus{
     padding-top: 35px;
     right: 8.5%;
 }
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00ff00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    display: none;
+}

@@ -159,3 +159,23 @@ button:focus{
     border-radius: 20px;
     box-shadow: 0px 10px 50px #72afaf;
 }
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00ff00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    display: none;
+}
