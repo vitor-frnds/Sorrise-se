@@ -140,9 +140,9 @@ endereco.addEventListener('keyup', () => {
 //Validação campo email
 email.addEventListener('keyup', () => {
 
-    if (email.value.length <= 2){
+    if (email.value.length <= 10){
         labelEmail.setAttribute('style', 'color: red;');
-        labelEmail.innerHTML = '<strong>Email *Insira no mínimo 3 caracteres</strong>'
+        labelEmail.innerHTML = '<strong>Email *Insira o email completo</strong>'
         email.setAttribute('style', 'border-color: red');
         validEmail = false;
     }

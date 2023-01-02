@@ -1,4 +1,4 @@
-//Funcionalidade para visualizar a senha
+//Variável para visualizar a senha
 let btn = document.querySelector('.fa-eye');
 
 
@@ -54,8 +54,8 @@ function entrar(){
     {
         window.location.href = "../html/principalDentista.html";
 
-        let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2); // Gera um número hexadecimal aleatório mas só a partir do segundo valor
-        localStorage.setItem('token', token);
+        let tokenDentista = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2); // Gera um número hexadecimal aleatório mas só a partir do segundo valor
+        localStorage.setItem('tokenDentista', tokenDentista);
 
         localStorage.setItem('dentistaLogado', JSON.stringify(dentistaValid));
     }

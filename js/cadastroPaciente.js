@@ -23,7 +23,7 @@ email.addEventListener('keyup', () => {
 
     if (email.value.length <= 10){
         labelEmail.setAttribute('style', 'color: red;');
-        labelEmail.innerHTML = '<strong>Email *Insira no mínimo 11 caracteres</strong>'
+        labelEmail.innerHTML = '<strong>Email *Insira o email completo</strong>'
         email.setAttribute('style', 'border-color: red');
         validEmail = false;
     }
@@ -71,6 +71,45 @@ confirmSenha.addEventListener('keyup', () => {
     }
 
 });
+
+//Funcionalidade para cadastrar o dentista
+function cadastrar(){
+
+    if(validEmail && validSenha && validConfirmSenha){
+
+        let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente') || '[]');
+
+        listaPaciente.push(
+        {
+            emailCad: email.value,
+            senhaCad: senha.value,
+        });
+
+
+        localStorage.setItem('listaPaciente', JSON.stringify(listaPaciente));
+
+
+        msgSuccess.setAttribute('style', 'display: block');
+        msgSuccess.innerHTML = '<strong>Atualizando Cadastro Paciente...</strong>'
+
+        msgError.setAttribute('style', 'display: none');
+        msgError.innerHTML =''
+
+
+        setTimeout (()=>{
+            window.location.href = '../html/loginPaciente.html';
+        }, 3000)
+        
+    }
+    else {
+        msgError.setAttribute('style', 'display: block');
+        msgError.innerHTML ='<strong>Preencha todos os campos corretamente antes de salvar</strong>'
+
+        msgSuccess.setAttribute('style', 'display: none');
+        msgSuccess.innerHTML ='';
+    }
+
+};
 
 //Funcionalidade para visualizar a senha
 btn.addEventListener('click', ()=>{

@@ -161,3 +161,23 @@ button:focus{
     box-shadow: 0 0 0 3px #206363;
     caret-color: white;
 }
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00ff00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    display: none;
+}
