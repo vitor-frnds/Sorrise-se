@@ -15,6 +15,21 @@ let logado = document.querySelector('#logado');
 
 logado.innerHTML = dentistaLogado.nome;
 
+function infos()
+{
+    window.location.href = "../html/dadosDentista.html";
+}
+
+function consultas()
+{
+
+}
+
+function pacientes()
+{
+
+}
+
 
 //Funcionalidade para sair da tela principalDentista
 function sair(){
