@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paciente - Tela Principal</title>
+    <title>Dentista - Tela Principal</title>
     <link rel="stylesheet" href="../css/principalPaciente.css">
 </head>
 <body>
+    <div class="container">
 
-    <h1 id="logado">logado!</h1>
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
 
-    <button onclick="sair()">Sair</button>
+        <h1 id="logado">Nome Paciente</h1>
+        <h3>Paciente</h3>
 
-    <script src="../js/principalPaciente.js"></script>
+        <div class="selection-button">
+
+            <a href=""><button class="btn-info">Suas Informações</button></a>
+            <a href=""><button class="btn-trat">Seu Tratamento</button></a>  
+            <a href=""><button class="btn-den">Seu Dentista</button></a>  
+
+        </div>
+
+        <button button class="sair" onclick="sair()">Sair</button>
+
+    </div>
+
+    <script src="../js/principalDentista.js"></script>
     
 </body>
 </html>

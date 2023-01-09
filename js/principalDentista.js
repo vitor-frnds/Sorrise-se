@@ -13,7 +13,8 @@ let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
 let logado = document.querySelector('#logado');
 
 
-logado.innerHTML = 'Olá ' + dentistaLogado.nome;
+logado.innerHTML = dentistaLogado.nome;
+
 
 //Funcionalidade para sair da tela principalDentista
 function sair(){

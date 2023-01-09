@@ -13,7 +13,7 @@ let pacienteLogado = JSON.parse(localStorage.getItem('pacienteLogado'));
 let logado = document.querySelector('#logado');
 
 
-logado.innerHTML = 'Olá ' + pacienteLogado.email;
+logado.innerHTML = pacienteLogado.email;
 
 //Funcionalidade para sair da tela principalPaciente
 function sair(){
