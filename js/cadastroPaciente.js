@@ -87,7 +87,7 @@ function cadastrar(){
         {
             emailCad: email.value,
             senhaCad: senha.value,
-            dentistaCad: dentista.value, //(salvar o dentista que o esta cadastrando)
+            dentistaCad: dentista, //(salvar o dentista que o esta cadastrando)
         });
 
 

@@ -1,6 +1,9 @@
-let dentista = JSON.parse(localStorage.getItem('dentista'));
 
-let nome= document.querySelector('#nome');
+
+let paciente = JSON.parse(localStorage.getItem('pacienteLogado'));
+let dentista = paciente.dentista;
+
+let nome = document.querySelector('#nome');
 nome.innerHTML = dentista.nome;
 
 let _cpf = document.querySelector('#cpf');
