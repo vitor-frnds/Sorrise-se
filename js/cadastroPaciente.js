@@ -79,7 +79,7 @@ function cadastrar(){
 
     if(validEmail && validSenha && validConfirmSenha){
         //Dentista desse paciente
-        let seuDentista = JSON.parse(localStorage.getItem('dentistaLogado'));
+        let dentista = JSON.parse(localStorage.getItem('dentistaLogado'));
 
         let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente') || '[]');
 
@@ -87,7 +87,7 @@ function cadastrar(){
         {
             emailCad: email.value,
             senhaCad: senha.value,
-            dentistaCad: seuDentista.value, //(salvar o dentista que o esta cadastrando)
+            dentistaCad: dentista.value, //(salvar o dentista que o esta cadastrando)
         });
 
 

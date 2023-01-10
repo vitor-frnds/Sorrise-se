@@ -12,8 +12,10 @@ if (localStorage.getItem('tokenPaciente') == null){
 let pacienteLogado = JSON.parse(localStorage.getItem('pacienteLogado'));
 let logado = document.querySelector('#logado');
 
-
-logado.innerHTML = pacienteLogado.email;
+if (pacienteLogado.nome==null)
+    logado.innerHTML = pacienteLogado.email;
+else
+    logado.innerHTML = pacienteLogado.nome;
 
 function infos()
 {
