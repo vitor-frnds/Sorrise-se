@@ -76,6 +76,7 @@ confirmSenha.addEventListener('keyup', () => {
 function cadastrar(){
 
     if(validEmail && validSenha && validConfirmSenha){
+        let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
 
         let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente') || '[]');
 
@@ -83,6 +84,7 @@ function cadastrar(){
         {
             emailCad: email.value,
             senhaCad: senha.value,
+            meuDentista: dentistaLogado.nome
         });
 
 
@@ -97,7 +99,7 @@ function cadastrar(){
 
 
         setTimeout (()=>{
-            window.location.href = '../html/loginPaciente.html';
+            window.location.href = '../html/principalDentista.html';
         }, 3000)
         
     }
