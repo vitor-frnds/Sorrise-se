@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-login {
+    width: 100vw;                 /*"Largura"; vw representa a porcentagem da largura da 'viewport', da 'tela'*/
+    height: 100vh;                /*"Altura"; vh representa a porcentagem da altura da 'viewport', da 'tela'*/
+    background-color: #99d9d9;  /**/
+    display: flex;                /*Organizar os conteúdos dentro da div; 'Flex' faz as coisas ficarem lado a lado*/
+    justify-content: center;      /*Centraliza as coisas no eixo X*/
+    align-items: center;          /*Centraliza as coisas no eixo Y*/
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       /*Tudo fique um em baixo do outro*/
+}
+
+.card-login {
+    width: 80%;                             /*Será 60% do tamanho da div. O tamanho da div representa 50% da viewport, logo será de 60% sobre os 50vw da div*/
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;                 /*Tudo fique um em baixo do outro*/
+    padding: 30px 35px;                     /*Margens pra dentro do componente. 1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
+    background: #99d9d9;                  /*Cor do plano de fundo*/
+    border-radius: 20px;                    /*Arredonda a borda*/
+    box-shadow: 0px 10px 40px #00000056;  /*Sombra para o card. 1º valor se refere ao eixo X, 2º valor se refere ao eixo Y, 3º valor se refere ao 'blur', 4º valor se refere à cor*/
+}
+
+.card-login > h1 {
+    color: white;
+    font-size: 70px;
+    margin: 0;             /*Tirar a margem criada do H1*/
+}
+
+
+
+.text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*justify-content se refere ao eixo X, allign-items se refere ao eixo Y. Ao utilizar o flex-direction os eixos se invertem*/
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    padding-bottom: 20px;
+    font-size: 25px;
+
+}
+
+.text-field > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;         /*Ao utilizar o padding com um único valor, ele vale tanto pro X quanto pro Y*/
+    background: white;
+    color: black;
+    font-size: 12;         /*Tamanho da fonte; 'pt' é a unidade de medida usada nos editores de texto*/
+    outline: none;         /*Tirar "caixa de seleção"*/
+    box-sizing: border-box;/*Div filho não vai poder ultrapassar o tamanho da div pai*/
+}
+
+.text-field > input::placeholder{
+    color: #545959ac;
+}
+
+.text-field > label{
+    color: #f0ffffde;
+    margin-bottom: 10px; /*Margem para baixo*/
+}
+
+.fa-eye {
+    color: #51b6b6;
+    justify-self: end;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 40px;
+    right: 56%;
+}
+
+.btn {
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button:focus{
+    border-color: white;
+    box-shadow: 0 0 0 3px #206363;
+    caret-color: white;
+}
+
+.btn > h3 {
+    color: #545959ac;
+    font-size: 20px;
+    margin: 0;             /*Tirar a margem criada do H3*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn-login {
+    width: 100%;
+    padding: 25px 45px;        /*1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
+    margin: 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase; /*Deixa todas as letras em maiúsculo*/
+    font-size: 20px;
+    font-weight: 700;          /*Torna a fonte mais grossa*/
+    letter-spacing: 2px;
+    color: white;
+    background: #51b6b6;
+    cursor: pointer;           /*seta o cursor como cursor de ação*/
+    box-shadow: 0px 10px 40px -12px #72afaf;
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 25px 45px;        /*1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
+    margin: 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase; /*Deixa todas as letras em maiúsculo*/
+    font-size: 20px;
+    font-weight: 700;          /*Torna a fonte mais grossa*/
+    letter-spacing: 2px;
+    color: white;
+    background: #51b6b6;
+    cursor: pointer;           /*seta o cursor como cursor de ação*/
+    box-shadow: 0px 10px 40px -12px #72afaf;
+}
+
+.right-login {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login-image {
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px #72afaf;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00ff00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    display: none;
+}

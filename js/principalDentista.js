@@ -12,7 +12,6 @@ if (localStorage.getItem('tokenDentista') == null){
 let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
 let logado = document.querySelector('#logado');
 
-
 logado.innerHTML = dentistaLogado.nome;
 
 function infos()
@@ -22,12 +21,12 @@ function infos()
 
 function consultas()
 {
-
+    window.location.href = "../html/agendarConsultas.html";
 }
 
 function pacientes()
 {
-    window.location.href = "../html/pacientesDoDentista.html";
+    window.location.href = "../html/pacientesDoDentista.html";    
 }
 
 

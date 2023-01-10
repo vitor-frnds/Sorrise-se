@@ -17,8 +17,7 @@ let confirmSenha = document.querySelector('#confirmSenha');
 let labelConfirmSenha = document.querySelector('#labelConfirmSenha');
 let validConfirmSenha = false;
 
-//Dentista desse paciente
-let seuDentista = JSON.parse(localStorage.getItem('dentistaLogado'));
+
 
 
 //Validação campo email
@@ -79,6 +78,10 @@ confirmSenha.addEventListener('keyup', () => {
 function cadastrar(){
 
     if(validEmail && validSenha && validConfirmSenha){
+        //Dentista desse paciente
+        let seuDentista = JSON.parse(localStorage.getItem('dentistaLogado'));
+
+        let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
 
         let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente') || '[]');
 
@@ -101,7 +104,7 @@ function cadastrar(){
 
 
         setTimeout (()=>{
-            window.location.href = '../html/loginPaciente.html';
+            window.location.href = '../html/principalDentista.html';
         }, 3000)
         
     }
