@@ -149,57 +149,64 @@ function atualizar(){
 
     if(validNome && validCpf && validTelefone && validEndereco && validSenha && validConfirmSenha){
 
-        let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente') || '[]');
-
-        if (localStorage.getItem('listaPaciente') == null)
-        {
-            msgError.setAttribute('style', 'display: block');
-            msgError.innerHTML = 'Usuário não Cadastrado';
-        }
-
+        let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente'));
         let pacienteLogado = JSON.parse(localStorage.getItem('pacienteLogado'));
 
-        listaPaciente.forEach((item) => {
+        let dadosNovos = {
+            nomeCad: nome.value,
+            cpfCad: cpf.value,
+            telefoneCad: telefone.value,
+            enderecoCad: endereco.value,
+            emailCad: pacienteLogado.email,
+            senhaCad: senha.value,
+            dentistaCad: pacienteLogado.dentista,
+        }
 
-            if (pacienteLogado.email == item.emailCad){
-                const index = listaPaciente.indexOf(item);
-                pacienteValid = {
-                    nomeCad: nome.value,
-                    cpfCad: cpf.value,
-                    telefoneCad: telefone.value,
-                    enderecoCad: endereco.value,
-                    senhaCad: senha.value,
-                    emailCad: pacienteLogado.email,
-                    dentistaCad: pacienteLogado.dentista,
-                }
-                listaPaciente[index] = pacienteValid;
+        for (let i = 0; i < listaPaciente.length; i++) {
+            if (listaPaciente[i].nomeCad == pacienteLogado.nome &&
+                listaPaciente[i].cpfCad == pacienteLogado.cpf &&
+                listaPaciente[i].telefoneCad == pacienteLogado.telefone &&
+                listaPaciente[i].enderecoCad == pacienteLogado.endereco &&
+                listaPaciente[i].emailCad == pacienteLogado.email &&
+                listaPaciente[i].senhaCad == pacienteLogado.senha &&
+                listaPaciente[i].dentistaCad == pacienteLogado.dentista) 
+            {
+              listaPaciente[i] = dadosNovos;
+              break;
             }
-        });
+        }
 
+        pacienteLogado = {
+            nome: nome.value,
+            cpf: cpf.value,
+            telefone: telefone.value,
+            endereco: endereco.value,
+            email: pacienteLogado.email,
+            senha: senha.value,
+            dentista: pacienteLogado.dentista,
+        }
 
         localStorage.setItem('listaPaciente', JSON.stringify(listaPaciente));
-
+        localStorage.setItem('pacienteLogado', JSON.stringify(pacienteLogado));
 
         msgSuccess.setAttribute('style', 'display: block');
-        msgSuccess.innerHTML = '<strong>Atualizando Dados Cadastrais...</strong>'
+        msgSuccess.innerHTML = '<strong>Atualizando os dados...</strong>'
 
         msgError.setAttribute('style', 'display: none');
         msgError.innerHTML =''
 
-
         setTimeout (()=>{
-            window.location.href = '../html/loginPaciente.html';
+            window.location.href = '../html/principalPaciente.html';
         }, 3000)
         
     }
     else {
         msgError.setAttribute('style', 'display: block');
-        msgError.innerHTML ='<strong>Preencha todos os campos corretamente antes de atualizar</strong>'
+        msgError.innerHTML ='<strong>Preencha todos os campos corretamente antes de cadastrar</strong>'
 
         msgSuccess.setAttribute('style', 'display: none');
         msgSuccess.innerHTML ='';
     }
-
 };
 
 //Funcionalidade para visualizar a senha

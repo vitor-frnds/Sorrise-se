@@ -16,7 +16,8 @@ function entrar(){
 
     let pacienteValid = {
         email: null,
-        senha: null
+        senha: null,
+        dentista: null,
     }    
 
 
@@ -34,7 +35,8 @@ function entrar(){
 
             pacienteValid = {
                 email: item.emailCad,
-                senha: item.senhaCad
+                senha: item.senhaCad,
+                dentista: item.dentista
             }
         }
     });

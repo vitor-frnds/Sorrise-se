@@ -216,6 +216,7 @@ function salvar(){
             enderecoCad: endereco.value,
             emailCad: email.value,
             senhaCad: senha.value,
+            dentistaCad: pacienteLogado.dentista,
         }
 
         for (let i = 0; i < listaPaciente.length; i++) {
@@ -224,7 +225,8 @@ function salvar(){
                 listaPaciente[i].telefoneCad == pacienteLogado.telefone &&
                 listaPaciente[i].enderecoCad == pacienteLogado.endereco &&
                 listaPaciente[i].emailCad == pacienteLogado.email &&
-                listaPaciente[i].senhaCad == pacienteLogado.senha) 
+                listaPaciente[i].senhaCad == pacienteLogado.senha &&
+                listaPaciente[i].dentistaCad == pacienteLogado.dentista) 
             {
               listaPaciente[i] = dadosNovos;
               break;
@@ -238,6 +240,7 @@ function salvar(){
             endereco: endereco.value,
             email: email.value,
             senha: senha.value,
+            dentista: pacienteLogado.dentista,
         }
 
         localStorage.setItem('listaPaciente', JSON.stringify(listaPaciente));
