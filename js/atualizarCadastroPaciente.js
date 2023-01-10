@@ -170,7 +170,7 @@ function atualizar(){
                     enderecoCad: endereco.value,
                     senhaCad: senha.value,
                     emailCad: pacienteLogado.email,
-                    meuDentista: item.meuDentista
+                    dentistaCad: pacienteLogado.dentista,
                 }
                 listaPaciente[index] = pacienteValid;
             }

@@ -1,6 +1,9 @@
 //Variável para visualizar a senha
 let btn = document.querySelector('.fa-eye');
 
+function voltar(){
+    window.location.href = "../html/index.html";
+}
 
 function entrar(){
 
@@ -34,7 +37,12 @@ function entrar(){
 
             pacienteValid = {
                 email: item.emailCad,
-                senha: item.senhaCad
+                senha: item.senhaCad,
+                nome: item.nomeCad,
+                cpf: item.cpfCad,
+                telefone: item.telefoneCad,
+                endereco: item.enderecoCad,
+                dentista: item.dentistaCad,
             }
         }
     });

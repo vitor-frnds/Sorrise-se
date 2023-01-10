@@ -1,6 +1,9 @@
 //Variável para visualizar a senha
 let btn = document.querySelector('.fa-eye');
 
+function voltar(){
+    window.location.href = "../html/index.html";
+}
 
 function entrar(){
 

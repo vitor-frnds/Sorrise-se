@@ -81,8 +81,6 @@ function cadastrar(){
         //Dentista desse paciente
         let seuDentista = JSON.parse(localStorage.getItem('dentistaLogado'));
 
-        let dentistaLogado = JSON.parse(localStorage.getItem('dentistaLogado'));
-
         let listaPaciente = JSON.parse(localStorage.getItem('listaPaciente') || '[]');
 
         listaPaciente.push(
