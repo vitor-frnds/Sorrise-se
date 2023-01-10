@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Dados do Dentista</title>
+    <link rel="stylesheet" href="../css/atualizarDadosDentista.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Atualizar Dados Cadastrais</h1>
+
+            <div class="full-card">
+                <div class="left-card">
+                    <div class="text-field">
+                        <label id="labelNome" for="nomeCompleto">Nome Completo:</label>
+                        <input id="nome" type="text" name="nomeCompleto" placeholder="Nome Completo">
+                    </div>
+                    <div class="text-field">
+                        <label id="labelCpf" for="cpf">CPF:</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="CPF">
+                    </div>
+                    <div class="text-field">
+                        <label id="labelCro" for="cro">CRO:</label>
+                        <input id="cro" type="text" name="cro" placeholder="CRO">
+                    </div>
+                    <div class="text-field">
+                        <label id="labelTelefone" for="telefone">Telefone:</label>
+                        <input id="telefone" type="text" name="telefone" placeholder="Telefone">
+                    </div> 
+                </div>
+                <div class="center-card">
+                    <div id="msgError"></div>
+                    <div id="msgSuccess"></div>
+
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <p>Escolher foto de perfil</p>
+                    <div class="btns">
+                        <button onclick="voltar()" class="btn">Cancelar</button>
+                        <button onclick='salvar()' class="btn">Salvar</button>
+                    </div>
+                </div>
+    
+                <div class="right-card">
+                    <div class="text-field">
+                        <label id="labelEndereco" for="Endereco">Endereço:</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Endereço">
+                    </div>
+                    <div class="text-field">
+                        <label id="labelEmail" for="Email">Email:</label>
+                        <input id="email" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="text-field">
+                        <label id="labelSenha" for="Senha">Senha:</label>
+                        <input id="senha" type="password" name="senha" placeholder="Senha">
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-field">
+                        <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha:</label>
+                        <input id="confirmSenha" type="password" name="confirmSenha" placeholder="Confirmar senha">
+                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/atualizarDadosDentista.js"></script>  
+
+</body>
+</html>
