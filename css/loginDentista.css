@@ -145,6 +145,29 @@ button:focus{
     box-shadow: 0px 10px 40px -12px #72afaf;
 }
 
+.voltar-btn {
+    width: 15%;
+    padding: 10px 15px;        /*1º valor se refere ao eixo Y, 2º valor se refere ao eixo X*/
+    margin-right: 500px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase; /*Deixa todas as letras em maiúsculo*/
+    font-size: 8px;
+    font-weight: 700;          /*Torna a fonte mais grossa*/
+    letter-spacing: 2px;
+    color: white;
+    background: #51b6b6;
+    cursor: pointer;           /*seta o cursor como cursor de ação*/
+    box-shadow: 0px 10px 40px -12px #72afaf;
+    text-align: center;
+    align-items: center;
+}
+
+.voltar {
+    display: grid;
+}
+
 .right-login {
     width: 50vw;
     height: 90vh;

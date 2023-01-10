@@ -1,4 +1,4 @@
-//Variável para visualizar a senha
+// //Variável para visualizar a senha
 let btn = document.querySelector('.fa-eye');
 
 
@@ -64,7 +64,7 @@ function entrar(){
 };
 
 
-//Funcionalidade para visualizar a senha
+// //Funcionalidade para visualizar a senha
 btn.addEventListener('click', ()=>{
     let inputSenha = document.querySelector('#senha')
 
