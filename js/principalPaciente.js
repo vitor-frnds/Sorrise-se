@@ -15,6 +15,21 @@ let logado = document.querySelector('#logado');
 
 logado.innerHTML = pacienteLogado.email;
 
+function infos()
+{
+    window.location.href = "../html/dadosPaciente.html";
+}
+
+function seuTratamento()
+{
+
+}
+
+function seuDentista()
+{
+    window.location.href = "../html/dadosSeuDentista.html";
+}
+
 //Funcionalidade para sair da tela principalPaciente
 function sair(){
 

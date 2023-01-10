@@ -17,6 +17,9 @@ let confirmSenha = document.querySelector('#confirmSenha');
 let labelConfirmSenha = document.querySelector('#labelConfirmSenha');
 let validConfirmSenha = false;
 
+//Dentista desse paciente
+let seuDentista = JSON.parse(localStorage.getItem('dentistaLogado'));
+
 
 //Validação campo email
 email.addEventListener('keyup', () => {
@@ -72,7 +75,7 @@ confirmSenha.addEventListener('keyup', () => {
 
 });
 
-//Funcionalidade para cadastrar o dentista
+//Funcionalidade para cadastrar o paciente
 function cadastrar(){
 
     if(validEmail && validSenha && validConfirmSenha){
@@ -83,6 +86,7 @@ function cadastrar(){
         {
             emailCad: email.value,
             senhaCad: senha.value,
+            dentistaCad: seuDentista.value, //(salvar o dentista que o esta cadastrando)
         });
 
 

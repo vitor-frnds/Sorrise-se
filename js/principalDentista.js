@@ -27,7 +27,7 @@ function consultas()
 
 function pacientes()
 {
-
+    window.location.href = "../html/pacientesDoDentista.html";
 }
 
 
